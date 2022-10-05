@@ -7,14 +7,29 @@
 
 /* Global */
 
+@font-face {
+  font-family: 'Manrope', sans-serif;
+  src: url("/fonts/Manrope/Manrope-VariableFont_wght.ttf") format(tff);
+}
+@font-face {
+  font-family: 'Corben', cursive;
+  src: url("/fonts/Corben/Corben-Regular.ttf");
+}
+
 body {
   font-family:'Manrope', sans-serif ;
   line-height: 1.5;
 }
 
-.logo, h1, h2 {
+.logo, h1, h2, h3, h4 {
   font-family: 'Corben', cursive;
 }
+
+.centered {
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 /* Skip content */
 
@@ -95,6 +110,213 @@ nav .active {
   background-color: #FF752E;
 }
 
+/* index page */
+
+.landing {
+   height: 550px;
+   width: 100vw;
+   background-color: #B8926A;
+   padding-top: 100px;
+}
+
+.landing-img {
+  height: 320px;
+  width: 270px;
+  background-image:url("/images/michael-oxendine-GHCVUtBECuY-unsplash.jpg") ;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50% 50% 0 0;
+  margin: auto;
+}
+
+.text-logo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.about-section {
+  height: 300px;
+  width: 100vw;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.text {
+  width: 50%;
+  align-items: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.latest {
+  height: 600px;
+  width: 100vw;
+  background-color: #F4E6D9;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.reviews {
+  height: 500px;
+  width: 100vw;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.shape {
+  height: 350px;
+  width: 85%;
+  border-radius: 0 45% 45% 0;
+  background-color: #4E5925;
+  margin-top: 50px;
+  color: #fff;
+  text-align: center; 
+}
+
+/* Footer */
+
+footer {
+  height: 180px;
+  width: 100vw;
+  border-top: 1px solid #000;
+  display: flex;
+}
+
+.one {
+  width: 33.3%;
+  height: 180px;
+  float: left; 
+  padding-top: 20px;
+  text-align: end;
+}
+
+.two {
+  width: 33.3%;
+  height: 180px;
+  float: left;
+  padding-top: 20px;
+}
+
+.two li,
+.three li {
+  list-style-type: none;
+  padding-left: 25px;
+}
+
+.three {
+  width: 33.3%;
+  height: 180px;
+  float: left;
+  padding-top: 20px;
+}
+
+.three img {
+  height: 20px;
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+/* ABOUT PAGE */ 
+
+.about-blog {
+  min-height: 400px;
+  width: 100vw;
+}
+
+.about-image {
+  width: 40%;
+  float: left;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-arch {
+  height: 300px;
+  width: 250px;
+  background-image:url("/images/liana-mikah-SCMgehsezIo-unsplash.jpg") ;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50% 50% 0 0;
+}
+
+.blog-text {
+  display: flex;
+  width: 55%;
+  float: left;
+  min-height: 400px;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.about-me {
+  min-height: 400px;
+  width: 100vw;
+}
+
+.me-image {
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.me-arch {
+  height: 300px;
+  width: 250px;
+  background-image:url("/images/r-architecture-CCjAPxoQWgQ-unsplash.jpg") ;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50% 50% 0 0;
+}
+
+.me-text {
+  max-width: 55%;
+  float: left;
+  min-height: 400px;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/* CONTACT PAGE */
+
+.form {
+  max-height: 570px;
+  max-width: 1000px;
+  border-radius: 50% 50% 0 0;
+  background-color:#B8926A;
+  margin: auto;
+  padding-top: 30px;
+}
+
+#contact-label label {
+  display: inherit;
+  margin: 5px auto;
+}
+
+#contact {
+  height: 500px;
+  width: 600px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.submit {
+  height: 40px;
+  width: 100px;
+  border: 1.5px solid #000;
+  padding: 3px 10px;
+  background-color: #FF752E;
+  font-weight: bold;
+}
+
+.form-error {
+  display: none;
+  color:#FF752E;
+  margin: 5px auto;
+}
+
+
 /* Media queries */
 
 @media (max-width:700px) { 
@@ -124,5 +346,49 @@ nav .active {
       float: left;
       position: absolute;
       background-color: #fff;
+  }
+
+  /* About page */ 
+  .about-blog {
+    width: 100vw;
+  }
+  
+  .about-image {
+    width: 100%;
+  }
+  
+  .about-arch {
+    height: 250px;
+    width: 200px;
+  }
+  
+  .blog-text {
+    width: 90%;
+    text-align: center;
+    margin: 0px 25px;
+  }
+  
+  .about-me {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .me-image {
+    order: 1;
+    width: 100%;
+    margin: auto;
+   }
+  
+  .me-arch {
+    height: 250px;
+    width: 200px;
+  }
+  
+  .me-text {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    margin: 25px auto;
   }
 }
