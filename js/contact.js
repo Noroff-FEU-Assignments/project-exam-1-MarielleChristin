@@ -2,7 +2,7 @@ const form = document.querySelector("#contact");
 const fullName = document.querySelector("#fullName");
 const fullNameError = document.querySelector("#fullNameError");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#EmailError");
+const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
 const subjectError = document.querySelector("#subjectError");
 const message = document.querySelector("#message");
@@ -11,7 +11,7 @@ const messageError = document.querySelector("#messageError");
 function validateForm (event) {
   event.preventDefault();
 
-  if(checkLength(fullName.ariaValueMax, 5) === true) {
+  if(checkLength(fullName.value, 4) === true) {
     fullNameError.style.display = "none";
   } else {
     fullNameError.style.display = "block";

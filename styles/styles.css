@@ -216,6 +216,47 @@ footer {
   margin-bottom: 5px;
 }
 
+/* SERVICES PAGE */
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.styling, .interior, .painting{
+  height: 650px;
+  width: 25%;
+  float: left;
+}
+
+.styling-arch, 
+.interior-arch,
+.painting-arch {
+  height: 200px;
+  width: 150px;
+  background-size: cover;
+  background-position: bottom;
+  border-radius: 50% 50% 0 0;
+  margin: 50px auto;
+}
+
+.styling-arch {
+  background-image: url("/images/georgia-de-lotz-IIdNqTB1Ois-unsplash.jpg");
+}
+
+.interior-arch {
+  background-image: url("/images/collov-home-design-HmHArS-HvNw-unsplash.jpg");
+}
+
+.painting-arch {
+  background-image: url("/images/yoann-siloine-LiDVw7tZPfY-unsplash.jpg");
+}
+
+.service-text p {
+  margin: 25px auto;
+  text-align:center;
+}
+
 /* ABOUT PAGE */ 
 
 .about-blog {
@@ -346,6 +387,18 @@ footer {
       float: left;
       position: absolute;
       background-color: #fff;
+  }
+
+  /* Service page */
+
+  .services {
+    display: block;
+  }
+  
+  .styling, .interior, .painting {
+    height: 500px;
+    width: 90%;
+    padding: 10px 30px;
   }
 
   /* About page */ 
