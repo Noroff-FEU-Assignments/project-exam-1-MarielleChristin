@@ -1,18 +1,22 @@
-const url = "https://rainydays.shepardavenue.online/wp-json/wp/v2/posts";
+const url = "https://rainydays.shepardavenue.online/wp-json/wp/v2/posts?_embed";
 const blogContainer = document.querySelector(".blogposts");
 
 async function getBlog(url) {
   const response = await fetch(url);
-  const blog = await response.json();
+  const posts = await response.json();
 
-  blog.forEach(function(){
+  posts.forEach(function(post){
     blogContainer.innerHTML += `
-    <div class="">
-    <h2>${blog.title}</h2>
-    <div>${blog.content}</div>
+    <div class="post">
+    <div class="featured"><img src="${post._embedded['wp:featuredmedia'][0].media_details.sizes["woocommerce_gallery_thumbnail"].source_url}"></div>
+    <h2>${post.title.rendered}</h2>
+    <div>${post.date}</div>
+    <div>${post.excerpt.rendered}</div>
+    <div class="post-tags">${post.categories}</div>
     </div>
     `
   })
+
 }
 
 getBlog(url);
