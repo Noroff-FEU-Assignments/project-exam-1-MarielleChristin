@@ -156,23 +156,6 @@ nav .active {
   padding-top: 30px;
 }
 
-.reviews {
-  height: 500px;
-  width: 100vw;
-  text-align: center;
-  padding-top: 30px;
-}
-
-.shape {
-  height: 350px;
-  width: 85%;
-  border-radius: 0 45% 45% 0;
-  background-color: #4E5925;
-  margin-top: 50px;
-  color: #fff;
-  text-align: center; 
-}
-
 /* Footer */
 
 footer {

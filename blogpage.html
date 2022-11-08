@@ -6,7 +6,8 @@
   <meta name="description" content="Shepards Avenue Interior Design">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/styles.css" rel="stylesheet">
-  <title>Shepard Avenue - Contact</title>
+  <link href="styles/blog.css" rel="stylesheet">
+  <title>Shepard Avenue</title>
 </head>
 <body>
   <header>
@@ -18,43 +19,17 @@
         <ul>
           <li class="logo"><a href="index.html">SA</a></li>
           <li><a href="index.html">Home</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li class="search"><img src="icons/search.png"></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
-    <div class="form">
-      <h1 class="centered" id="main" tabindex="-1">Contact form</h1>
-      <p class="centered">Contact me for any questions and booking</p>
-      <form id="contact">
-        <div id="contact-label">
-          <label for="fullName">Full name (required)</label>
-          <input type="text" id="fullName" name="fullName" required>
-          <div class="form-error" id="fullNameError">Must be longer than 5 characters</div>
-        </div>
-        <div id="contact-label">
-          <label for="email">Email address (required)</label>
-          <input type="email" id="email" name="email" required>
-          <div class="form-error" id="emailError">Please enter a valid email address</div>
-        </div>
-        <div id="contact-label">
-          <label for="subject">Subject (required)</label>
-          <input type="text" id="subject" name="subject" required>
-          <div class="form-error" id="subjectError">Must be more than 15 characters</div>
-        </div>
-        <div id="contact-label">
-          <label for="message">Message (required)</label>
-          <textarea id="message" name="message" rows="6" cols="30" required></textarea> 
-          <div class="form-error" id="messageError">Must be longer than 25 characters</div>
-        </div>
-        <input type="submit" value="Submit" class="submit">
-      </form>
-    </div>
+    <div class="detail"></div>
   </main>
   <footer>
     <section class="one"><h4>Shepard Avenue</h4></section>
@@ -74,6 +49,6 @@
       </ul>
     </section>
   </footer>
-  <script src="/js/contact.js"></script>
+  <script src="/js/blogpage.js"></script>
 </body>
 </html>

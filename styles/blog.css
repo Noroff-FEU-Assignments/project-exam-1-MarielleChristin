@@ -1,0 +1,55 @@
+.post {
+  width: 50%;
+  margin: auto;
+  border-top: 1.5px solid #000;
+  padding-bottom: 20px;
+}
+
+#heading {
+  padding-bottom: 20px;
+}
+
+.post {
+  padding-top: 20px;
+}
+
+.featured {
+  float: left;
+  max-height: 200px;
+  width: 120px;
+}
+
+.excerpt {
+  margin-left: 20px;
+}
+
+.viewmore {
+  margin: auto;
+  width: 150px;
+  padding-bottom: 30px;
+}
+
+.viewmore button {
+  width: 150px;
+  height: 40px;
+  border: 1px solid #000;
+  background-color: #FF752E;
+  font-weight: bold;
+}
+
+/* blog page */
+
+.content {
+  width: 75%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* MEDIA */
+
+@media (max-width:700px) {
+  .post {
+    width: 80%;
+  }
+}
