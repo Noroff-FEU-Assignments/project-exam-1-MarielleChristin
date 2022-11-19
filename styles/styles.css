@@ -81,7 +81,7 @@ header {
 }
 
 nav li {
-  display: inline-flex;
+  display: inline;
   margin: 20px;
 }
 
@@ -113,10 +113,14 @@ nav .active {
 /* index page */
 
 .landing {
-   height: 550px;
+   height: 450px;
    width: 100vw;
    background-color: #B8926A;
    padding-top: 100px;
+}
+
+#cover {
+  background-color:#B8926A;
 }
 
 .landing-img {
