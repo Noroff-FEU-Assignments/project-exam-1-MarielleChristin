@@ -33,7 +33,7 @@ Instructions
 
 ## Contact
 
-For contact of any kind, you can currently reach me on mariellechristin@hotmail.com
+For contact of any kind, you can currently reach me on Discord @ Marielle Tømte - Jan21 PT#8313
 
 ## License
 
